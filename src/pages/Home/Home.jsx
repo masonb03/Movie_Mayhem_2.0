@@ -3,6 +3,7 @@ import './Home.css'
 import Navbar from '../../components/Navbar/Navbar'
 import Titlecard from '../../components/Titlecards/Titlecard';
 import banner from '../../assets/hero_banner.jpg'
+import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
   return (
@@ -19,11 +20,12 @@ const Home = () => {
         <h1 className="movie__section--title">
           We have a variety of movies and shows
         </h1>
-        <Titlecard title={" Movies "}/>
-        <Titlecard title={" Movies "}/>
-        <Titlecard title={" Movies "}/>
+        <Titlecard title={"Top Picks"}/>
+        <Titlecard title={"Coming Soon"}/>
+        <Titlecard title={""}/>
         <Titlecard title={" Movies "}/>
       </div>
+      <Footer />
     </div>
   )
 }

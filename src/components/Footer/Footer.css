@@ -1,0 +1,30 @@
+.container {
+    background-color: #000000;
+    width: 100%;
+}
+
+.social__list {
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    list-style: none;
+}
+
+.social__link {
+    color: white;
+    font-size: 20px;
+    padding: 12px 24px;
+}
+
+.footer__list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    color: white;
+    gap: 25px;
+    font-size: 18px;
+    list-style: none;
+    margin-left: 48px;
+    place-items: center;
+}
+
+
