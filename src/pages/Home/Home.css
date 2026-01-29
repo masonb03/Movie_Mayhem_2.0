@@ -29,3 +29,26 @@
     max-width: 700px;
     margin-bottom: 18em;
 }
+
+.movie__filter--list {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    list-style: none;
+    gap: 25px;
+}
+
+.movie__filter--link {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-right: 24px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.movie__filter--link:hover {
+    transform: scale(1.10);
+}

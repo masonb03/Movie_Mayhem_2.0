@@ -6,6 +6,7 @@ import banner from '../../assets/hero_banner.jpg'
 import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
+
   return (
     <div>
       <Navbar />
@@ -17,13 +18,12 @@ const Home = () => {
         </div>
       </div>
       <div className="movie__section">
-        <h1 className="movie__section--title">
-          We have a variety of movies and shows
-        </h1>
-        <Titlecard title={"Top Picks"}/>
-        <Titlecard title={"Coming Soon"}/>
-        <Titlecard title={""}/>
-        <Titlecard title={" Movies "}/>
+          <ul className="movie__filter--list">
+            <li className="movie__filter--link">Now Playing</li>
+            <li className="movie__filter--link">Upcoming</li>
+          </ul>
+        <hr />
+        <Titlecard />
       </div>
       <Footer />
     </div>

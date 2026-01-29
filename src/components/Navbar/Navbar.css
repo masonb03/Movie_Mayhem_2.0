@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 12px 24px;
+    padding: 24px;
     font-size: 20px;
     z-index: 1;
     background-image: linear-gradient(180deg, rgba(0,0,0,0.7) 10%, transparent);
@@ -26,7 +26,7 @@
 .navbar__right {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .search__container {
@@ -54,4 +54,10 @@
 .nav__link:hover {
     opacity: 1;
     transform: scale(1.25);
+}
+
+.nav__link--login,
+ .nav__link--signup {
+    background-color: #1FC2FF;
+    border-radius: 40px;
 }
