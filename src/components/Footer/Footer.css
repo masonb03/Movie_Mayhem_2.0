@@ -12,8 +12,16 @@
 
 .social__link {
     color: white;
-    font-size: 20px;
-    padding: 12px 24px;
+    font-size: 32px;
+    padding: 12px;
+    margin-right: 20px;
+    margin-top: 16px;
+    transition: all 0.3s ease;
+}
+
+.social__link:hover {
+    color: #1FC2FF;
+    transform: scale(1.25);
 }
 
 .footer__list {
