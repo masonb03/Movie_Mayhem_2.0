@@ -1,14 +1,31 @@
 import React from 'react'
 import './Home.css'
-export const Home = () => {
+import Navbar from '../../components/Navbar/Navbar'
+import Titlecard from '../../components/Titlecards/Titlecard';
+import banner from '../../assets/hero_banner.jpg'
+
+const Home = () => {
   return (
-    <div className='container'>
+    <div>
+      <Navbar />
       <div className="hero">
-        <div className="hero__section">
-          <h1 className='hero__title'>Welcome to Movie Mayhem!</h1>
-          <p className='hero__caption'>A place where you browse for any movie that you desire!</p>
+        <img src={banner} alt="" className='hero__banner'/>
+        <div className="hero__caption">
+          <h1 className="hero__title">Welcome to Movie Mayhem!</h1>
+          <p className="hero__description">America's most useful and enjoyable movie streaming service. Where you can browse for movies and shows you enjoy the most and enjoy your time with friends and family.</p>
         </div>
+      </div>
+      <div className="movie__section">
+        <h1 className="movie__section--title">
+          We have a variety of movies and shows
+        </h1>
+        <Titlecard title={" Movies "}/>
+        <Titlecard title={" Movies "}/>
+        <Titlecard title={" Movies "}/>
+        <Titlecard title={" Movies "}/>
       </div>
     </div>
   )
 }
+
+export default Home
