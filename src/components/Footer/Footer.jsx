@@ -5,7 +5,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='container'>
+    <div className='footer__container'>
       <div className="row">
         <ul className="social__list">
           <li className="social__link">

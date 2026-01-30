@@ -1,0 +1,44 @@
+.container {
+    padding: 24px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.movie {
+    display: flex
+}
+
+.movie__poster {
+    max-height: 500px;
+    width: auto;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie__info {
+    width: 60%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 24px;
+}
+
+.movie__title{
+    font-size: 32px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    margin-bottom: 12px;
+}
+
+.movie__year {
+    
+}
