@@ -4,41 +4,144 @@
 
 .row {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
-.movie {
-    display: flex
+.back__btn {
+    padding: 4px 12px 4px 12px;
+    font-size: 24px;
+    border-radius: 50px;
+    opacity: 0.7;
+    margin-left: 32px;
+    margin-bottom: 28px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.movie__poster {
+.back__btn:hover {
+    opacity: 1;
+    transform: scale(1.25);
+}
+
+#movie__body {
+    flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+#movie__main {
+    flex: 1;
+}
+
+.movie {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 44px;
+}
+
+
+.single__movie--poster{
     max-height: 500px;
     width: auto;
     max-width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:flex-end;
+    margin-left: 24px;
 }
 
-.movie__info {
+.single__movie--info {
     width: 60%;
     color: #fff;
     display: flex;
-    flex-direction: column;
     align-items: flex-start;
     padding: 12px 24px;
 }
 
-.movie__title{
+.single__movie--primary {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 1300px;
+}
+
+.single__movie--primary p {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.single__movie--title {
+    display: flex;
+    align-items: end;
     font-size: 32px;
-    font-weight: 800;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.single__movie--rated {
     display: flex;
     align-items: center;
-    padding: 8px 12px;
+    justify-content: center;
+    margin-left: 12px;
+    padding: 4px;
+    background-color: grey;
+    border-radius: 12px;
+}
+
+.single__movie--director {
+    margin-bottom: 12px;
+    line-height: 32px;
+}
+
+.single__movie--cast {
+    margin-bottom: 12px;
+    line-height: 32px;
+}
+
+.single__movie--plot {
+    margin-bottom: 12px;
+    line-height: 24px;
+}
+
+
+.single__movie--secondary {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    padding: 20px 32px 20px 20px;
+    margin-left: 8px;
+    width: 600px;
+}
+
+.single__movie--secondary p {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.single__movie--runtime {
     margin-bottom: 12px;
 }
 
-.movie__year {
-    
+.single__movie--release {
+    margin-bottom: 12px;
+}
+
+.single__movie--genre {
+    font-weight: bold;
+}
+
+.movie__ratings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie__scores {
+    margin: 0 auto;
+    padding-top: 24px;
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
 }

@@ -22,7 +22,7 @@ const Titlecard = () => {
   }
 
   useEffect(() => {
-    fetchMovies('Kong');
+    fetchMovies('Godzilla');
     movieRef.current.addEventListener('wheel', scroll)
   }, [])
   

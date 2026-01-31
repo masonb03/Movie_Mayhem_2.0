@@ -25,7 +25,6 @@ const Home = () => {
         <hr />
         <Titlecard />
       </div>
-      <Footer />
     </div>
   )
 }
