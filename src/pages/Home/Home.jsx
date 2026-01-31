@@ -18,11 +18,6 @@ const Home = () => {
         </div>
       </div>
       <div className="movie__section">
-          <ul className="movie__filter--list">
-            <li className="movie__filter--link">Now Playing</li>
-            <li className="movie__filter--link">Upcoming</li>
-          </ul>
-        <hr />
         <Titlecard />
       </div>
     </div>

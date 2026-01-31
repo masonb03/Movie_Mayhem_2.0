@@ -12,6 +12,7 @@
     gap: 15px;
     overflow-x: scroll;
     scroll-behavior: smooth;
+    padding-bottom: 24px;
 }
 
 .movie__list::-webkit-scrollbar {
@@ -26,6 +27,7 @@
 
 .movie__poster {
     height: 450px;
+    width: auto;
 }
 
 .movie__title{
@@ -49,4 +51,33 @@
 .movie__card:hover {
     transform: scale(1.05);
     opacity: 1;
+}
+
+.movie__caption {
+    display: flex;
+    align-items: center;
+    margin: 24px 0;
+}
+
+.movie__caption h2 {
+    font-size: 28px;
+    margin-left: 12px;
+}
+
+.refresh {
+    color: white;
+    padding: 8px;
+    margin-left: 16px;
+    font-size: 20px;
+    border: none;
+    background-color: #1FC2FF;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.refresh:hover {
+    opacity: 1;
+    transform: scale(1.15);
 }
