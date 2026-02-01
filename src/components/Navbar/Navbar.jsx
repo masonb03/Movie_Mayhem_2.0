@@ -34,8 +34,6 @@ function handleSearch() {
           className="search__bar"/>
           <img src={search_icon} alt="" className="icon" onClick={() => handleSearch()} />
           </div>
-          <Link className='nav__link nav__link--login'>Login</Link>
-          <Link className='nav__link nav__link--signup'>Signup</Link>
         </div>
       </div>
     </>

@@ -56,8 +56,3 @@
     transform: scale(1.25);
 }
 
-.nav__link--login,
- .nav__link--signup {
-    background-color: #1FC2FF;
-    border-radius: 40px;
-}
