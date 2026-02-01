@@ -1,7 +1,6 @@
 import React from 'react'
 import './Home.css'
 import Titlecard from '../../components/Titlecards/Titlecard';
-import banner from '../../assets/hero_banner.jpg'
 import Slideshow from '../../components/Slideshow/Slideshow';
 
 const Home = () => {

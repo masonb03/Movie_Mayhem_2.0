@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom';
 import search_icon from '../../assets/search_icon.svg'
 import './Navbar.css'
-import axios from 'axios';
 
 const Navbar = () => {
 
