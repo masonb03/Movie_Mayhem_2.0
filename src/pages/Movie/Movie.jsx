@@ -7,13 +7,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export const Movie = () => {
 
   const [movie, setMovie] = useState()
+  const [loading, setLoading] = useState(true);
   const { id } = useParams();
   let navigate = useNavigate();
 
 
   async function fetchMovie() {
-    const { data } = await axios.get(`https://omdbapi.com/?i=${id}&page=1&apikey=4e75cc56`);
+    setLoading(true)
+    const { data } = await axios.get(`https://omdbapi.com/?i=${id}&page=1&apikey=6a64f8a0`);
     setMovie(data);
+    setLoading(false);
   }
 
   useEffect(() => {
@@ -28,8 +31,14 @@ export const Movie = () => {
           <button className="back__btn" onClick={() => navigate(`/`)}>
             <FontAwesomeIcon icon="arrow-left" />
           </button>
-            {movie && (
-            <div className="movie" key={movie.imdbID}>
+            { loading ? (
+              <div className="loading">Loading movies...
+              <FontAwesomeIcon icon="fa-spinner"/>
+              </div>
+              ) : (
+              <>
+                {movie && (
+                  <div className="movie" key={movie.imdbID}>
                   <img className='single__movie--poster' src={movie.Poster} alt="" />
                   <div className="single__movie--info">
                     <div className="single__movie--primary">
@@ -53,6 +62,8 @@ export const Movie = () => {
                 <div className="movie__scores">IMDB Rating: {movie.imdbRating}</div>
                 <div className="movie__scores">Box Office: {movie.BoxOffice}</div>
               </div>
+                )}
+              </>
             )}
         </div>
       </div>

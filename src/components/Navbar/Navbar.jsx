@@ -1,10 +1,21 @@
-import React from 'react'
-import {Link} from 'react-router-dom';
-import search from '../../assets/search_icon.svg'
+import React, { useEffect, useState } from 'react'
+import {Link, useNavigate} from 'react-router-dom';
+import search_icon from '../../assets/search_icon.svg'
 import './Navbar.css'
-
+import axios from 'axios';
 
 const Navbar = () => {
+
+const [search, setSearch] = useState();
+let navigate = useNavigate();
+
+function handleSearch() {
+  if (search.trim()) {
+    navigate(`/browse?search=${(search)}`);
+    setSearch('');
+  }
+}
+
   return (
     <>
       <div className="navbar">
@@ -16,9 +27,12 @@ const Navbar = () => {
           <div className="search__container">
           <input 
           type="text"
+          value={search}
+          onChange={(event) => setSearch(event.target.value)}
+          onKeyPress={(event) => event.key === 'Enter' && handleSearch()}
           placeholder='Search...'
           className="search__bar"/>
-          <img src={search} alt="" className="icon" />
+          <img src={search_icon} alt="" className="icon" onClick={() => handleSearch()} />
           </div>
           <Link className='nav__link nav__link--login'>Login</Link>
           <Link className='nav__link nav__link--signup'>Signup</Link>

@@ -4,9 +4,9 @@ import './index.css'
 import App from './App.jsx'
 import { BrowserRouter } from 'react-router-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faArrowLeft, faArrowsRotate } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faArrowsRotate, faSpinner } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faArrowLeft, faArrowsRotate)
+library.add(faArrowLeft, faArrowsRotate, faSpinner)
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

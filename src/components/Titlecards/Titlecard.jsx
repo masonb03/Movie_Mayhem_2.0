@@ -28,7 +28,7 @@ const Titlecard = () => {
     const randomTerm = searchTerms[Math.floor(Math.random() * searchTerms.length)];
     const randomPage = Math.floor(Math.random() * 10) + 1;
 
-    const { data } = await axios.get(`https://omdbapi.com/?s=${randomTerm}}&page=${randomPage}&apikey=4e75cc56`);
+    const { data } = await axios.get(`https://omdbapi.com/?s=${randomTerm}&page=${randomPage}&apikey=6a64f8a0`);
     setMovies(data.Search || [])
 
     if (data.Search) {

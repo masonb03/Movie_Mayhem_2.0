@@ -11,12 +11,15 @@
     color: #fff;
     transition: all 0.3s ease;
     margin-left: 64px;
+    margin-bottom: 24px;
+    opacity: 0.7;
 }
 
 .movie__img--wrapper {
     display: flex;
     margin-bottom: 8px;
     overflow: hidden;
+    transition: all 0.3s ease;
 }
 
 .movie__img {
@@ -27,6 +30,7 @@
 
 .movie__display:hover {
     transform: translateY(-4px);
+    opacity: 1;
 }
 
 .movie__name {
@@ -57,4 +61,29 @@
 .movie__release--date {
     margin-top: 8px;
     font-weight: 700;
+}
+
+.search__title {
+    margin: 12px 24px;
+    font-size: 32px;
+    color: #fff;
+}
+
+.loading {
+    color: #fff;
+    font-size: 32px;
+}
+
+.fa-spinner {
+  animation: rotate 600ms infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
