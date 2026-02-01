@@ -2,8 +2,6 @@ import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import './Movie.css'
-import Footer from '../../components/Footer/Footer'
-import Navbar from '../../components/Navbar/Navbar'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 export const Movie = () => {
@@ -24,7 +22,6 @@ export const Movie = () => {
 
   return (
     <div id="movie__body">
-    <Navbar />
     <main id="movie__main">
       <div className="container">
         <div className="row">
@@ -57,7 +54,6 @@ export const Movie = () => {
                 <div className="movie__scores">Box Office: {movie.BoxOffice}</div>
               </div>
             )}
-            
         </div>
       </div>
       </main>

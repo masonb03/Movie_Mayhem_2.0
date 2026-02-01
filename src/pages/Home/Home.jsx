@@ -1,15 +1,12 @@
 import React from 'react'
 import './Home.css'
-import Navbar from '../../components/Navbar/Navbar'
 import Titlecard from '../../components/Titlecards/Titlecard';
 import banner from '../../assets/hero_banner.jpg'
-import Footer from '../../components/Footer/Footer';
 
 const Home = () => {
 
   return (
     <div>
-      <Navbar />
       <div className="hero">
         <img src={banner} alt="" className='hero__banner'/>
         <div className="hero__caption">

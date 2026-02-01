@@ -1,0 +1,60 @@
+.movies__grid {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, minmax(100px, 1fr));
+    gap: 20px;
+}
+
+.movie__display {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    transition: all 0.3s ease;
+    margin-left: 64px;
+}
+
+.movie__img--wrapper {
+    display: flex;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.movie__img {
+    height: 450px;
+    width: 300px;
+    cursor: pointer;
+}
+
+.movie__display:hover {
+    transform: translateY(-4px);
+}
+
+.movie__name {
+    width: 70%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.movie__caption--facts {
+    display: flex;
+    flex-direction: column;
+    color: #929292
+}
+
+.movie__facts {
+    display: flex;
+    flex-wrap: flex;
+    list-style: none;
+}
+
+.movie__fact {
+    margin-top: 8px; 
+    padding-right: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.movie__release--date {
+    margin-top: 8px;
+    font-weight: 700;
+}
