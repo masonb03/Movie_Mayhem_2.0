@@ -31,9 +31,23 @@
     gap: 25px;
     font-size: 18px;
     list-style: none;
-    margin-left: 48px;
     padding-bottom: 24px;
     place-items: center;
+}
+
+.copyright {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 8px;
+    padding-bottom: 12px;
+}
+
+@media(max-width: 768px){
+    .footer__list {
+        grid-template-columns: auto auto;
+        gap: 12px;
+    }
 }
 
 

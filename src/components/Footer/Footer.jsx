@@ -32,6 +32,7 @@ const Footer = () => {
           <li>Corporate Information</li>
           <li>Contact Us</li>
       </ul>
+      <div className="copyright">&copy; 2026 Movie Mayhem, Inc.</div>
       </div>
     </div>
   )

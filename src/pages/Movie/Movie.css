@@ -146,3 +146,131 @@
     color: white;
     font-weight: 600;
 }
+
+@media (max-width: 1024px) {
+    .single__movie--primary {
+        width: 100%;
+    }
+    
+    .single__movie--secondary {
+        width: 300px;
+        padding: 20px 16px;
+    }
+    
+    .single__movie--title {
+        font-size: 28px;
+    }
+    
+    .movie__scores {
+        font-size: 28px;
+        padding-top: 32px;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .back__btn {
+        margin-left: 16px;
+        font-size: 20px;
+    }
+    
+    .movie {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 16px;
+    }
+    
+    .single__movie--poster {
+        max-height: 400px;
+        margin-left: 0;
+        margin-bottom: 24px;
+    }
+    
+    .single__movie--info {
+        width: 100%;
+        flex-direction: column;
+        padding: 12px 0;
+    }
+    
+    .single__movie--primary {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    
+    .single__movie--secondary {
+        width: 100%;
+        margin-left: 0;
+        padding: 20px 0;
+    }
+    
+    .single__movie--title {
+        font-size: 24px;
+        flex-wrap: wrap;
+    }
+    
+    .movie__ratings {
+        flex-direction: column;
+        gap: 16px;
+    }
+    
+    .movie__scores {
+        font-size: 24px;
+        padding-top: 0;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 576px) {
+    .back__btn {
+        margin-left: 12px;
+        margin-bottom: 16px;
+        font-size: 18px;
+        padding: 4px 10px;
+    }
+    
+    .container {
+        padding: 16px 0;
+    }
+    
+    .movie {
+        padding: 0 12px;
+        margin-bottom: 24px;
+    }
+    
+    .single__movie--poster {
+        max-height: 300px;
+        margin-bottom: 16px;
+    }
+    
+    .single__movie--title {
+        font-size: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .single__movie--rated {
+        margin-left: 0;
+        margin-top: 8px;
+        font-size: 14px;
+    }
+    
+    .single__movie--director,
+    .single__movie--cast,
+    .single__movie--plot {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    
+    .single__movie--secondary {
+        font-size: 14px;
+    }
+    
+    .movie__scores {
+        font-size: 18px;
+        text-align: center;
+    }
+    
+    .movie__ratings {
+        margin-bottom: 24px;
+    }
+}

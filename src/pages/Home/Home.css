@@ -27,7 +27,8 @@
 .hero__description{
     font-size: 32px;
     max-width: 700px;
-    margin-bottom: 18em;
+    margin-bottom: 1em;
+    opacity: 0.8;
 }
 
 .movie__filter--list {
@@ -51,4 +52,15 @@
 
 .movie__filter--link:hover {
     transform: scale(1.10);
+}
+
+
+@media(max-width: 768px) {
+    .hero__title {
+        font-size: 32px;
+    }
+
+    .hero__description {
+        font-size: 24px;
+    }
 }
