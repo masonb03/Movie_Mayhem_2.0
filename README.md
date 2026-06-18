@@ -1,5 +1,7 @@
 🎬 MovieMayhem
 
+🔗 **Live Demo:** [moviemayhem-six.vercel.app](https://moviemayhem-six.vercel.app)
+
 A modern movie discovery and browsing platform designed to help users explore trending films, popular titles, and detailed movie information in a clean, responsive interface.
 
 🌐 Live Demo: https://moviemayhem-six.vercel.app
@@ -28,3 +30,11 @@ Styling: CSS3
 API: Movie database API
 Deployment: Vercel
 Language: JavaScript
+
+
+## Getting Started
+```bash
+npm install
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) to view the app.
