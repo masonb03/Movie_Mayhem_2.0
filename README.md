@@ -4,9 +4,6 @@
 
 A modern movie discovery and browsing platform designed to help users explore trending films, popular titles, and detailed movie information in a clean, responsive interface.
 
-🌐 Live Demo: https://moviemayhem-six.vercel.app
-📁 Repository: (add your GitHub link here)
-
 ✨ Overview
 
 MovieMayhem is a frontend-focused movie discovery application that allows users to browse trending films, explore categories, and view detailed movie information in a sleek, modern UI.
